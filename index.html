@@ -14,6 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+      <!-- Tailwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+
     <style>
         .font-sora{
             font-family: "Sora", serif;
@@ -22,42 +30,74 @@
 
 </head>
 <body class="font-sora">
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-          </div>
-           <img src="c2-assets/logo-header.png" alt="">
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact Us</a></li>
+   <!-- two item navbar section -->
+   <div class="flex max-w-screen-xl justify-between mx-5 my-2 mb-6 lg:hidden">
+    <img src="c2-assets/logo-footer.png" alt="">
+    <img src="c2-assets/list (1).png" alt="">
+  </div>
+  <div class="w-full h-px bg-green-600">
+    <hr>
+  </div>
+  <main class="lg:max-w-screen-xl mx-auto px-16 lg:px-15 lg:mb-8 mt-8">
 
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <img src="c2-assets/search (3).png" alt="">
-          <img src="c2-assets/search (2).png" alt="">
-          <img src="c2-assets/shopping.png" alt="">
-          <button class="btn">Login</button>
-          <button class="btn btn-success text-white">Register</button>
-          <a class=""></a>
-        </div>
+    <div class="hidden lg:flex h-10 navbar bg-base-100">
+      <div class="navbar-start">
+         <img src="c2-assets/logo-header.png" alt="">
       </div>
+      <div class="navbar-center hidden lg:flex ">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-gray-600 text-lg"><a>Product</a></li>
+          <li class="text-gray-600 text-lg"><a>Services</a></li>
+          <li class="text-gray-600 text-lg"><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-7 p-0">
+        <img src="c2-assets/search (3).png" alt="">
+        <img src="c2-assets/search (2).png" alt="">
+        <img src="c2-assets/shopping.png" alt="">
+        <button class="btn">Login</button>
+        <button class="btn btn-success text-white">Register</button>
+      </div>
+    </div>
+
+    <div class="text-center lg:mt-8 mt-5">
+        <h2 class="text-gray-600 text-2xl font-semibold"> Freshness <span class="text-green-600">You Can Count</span> On, Prices You'll Love!</h2>
+      <p class="text-gray-600 mt-10 mb-10">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
+    </div>
+    <div class="items-center justify-center">
+      <img src="c2-assets/hero-vegetables.png" alt="">
+    </div>
+  </main>
+  <section  class=" lg:max-w-screen-xl mx-auto px-16 lg:px-15 lg:mb-8 mt-8 lg:gap-3 ">
+    <h1 class="text-2xl text-green-600">Services</h1>
+
+    <div class="lg:flex items-center text-center ">
+      
+      <!-- Card-1 -->
+    <div class="bg-red-50 my-5 rounded-2xl  p-4 place-items-center">
+      <img class=" bg-white  rounded-full p-3 lg:rounded-full" src="c2-assets/service.png" alt="">
+      <h1 class="text-gray-600 font-bold text-3xl">24/7 Services</h1>
+      <p>Providing support, assistance, or operations at any time of day or night. Allowing businesses to operate efficiently without constant human intervention.</p>
+    </div>
+    <!-- Card-2 -->
+    <div class="bg-red-50 my-5 rounded-2xl p-4 lg:mx-3 place-items-center">
+      <img class=" bg-white  rounded-full p-3  lg:rounded-full " src="c2-assets/delivery.png" alt="">
+      <h1 class="text-gray-600 font-bold text-3xl">Fast Delivery</h1>
+      <p>Fast delivery ensures products or services reach customers quickly, often within hours or days, enhancing satisfaction and loyalty.</p>
+    </div>
+    <!-- Card-3 -->
+    <div class="bg-red-50 my-5 rounded-2xl p-4 lg:mx-3 place-items-center">
+      <img class=" bg-white  rounded-full p-3  lg:rounded-full " src="c2-assets/healthy.png" alt="">
+      <h1 class="text-gray-600 font-bold text-3xl">Healthy Products</h1>
+      <p>Healthy products focus on natural, organic, and nutrient-rich ingredients, promoting overall well-being and sustainable living.  </p>
+    </div>
+
+    </div>
+  </section>
+
+  <section>
+    
+  </section>
+
 </body>
 </html>
