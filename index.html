@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=B, initial-scale=1.0">
     <title>Vegetables</title>
 
+    <!-- font awesome kits -->
+    <script src="https://kit.fontawesome.com/7f09317bdd.js" crossorigin="anonymous"></script>
+
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -88,153 +91,238 @@
     <!-- Card-3 -->
     <div class="bg-red-50 my-5 rounded-2xl p-4 lg:mx-3 place-items-center">
       <img class=" bg-white  rounded-full p-3  lg:rounded-full " src="c2-assets/healthy.png" alt="">
-      <h1 class="text-gray-600 font-bold text-3xl">Healthy Products</h1>
+      <h1 class="text-gray-600 font-bold text-2xl">Healthy Products</h1>
       <p>Healthy products focus on natural, organic, and nutrient-rich ingredients, promoting overall well-being and sustainable living.  </p>
     </div>
 
     </div>
-  <!-- </section> -->
 
+  <!-- Popular Products -->
+  <div class=" bg-[#efebe4] h-full w-full rounded-2xl mb-20">
+    <div class="flex flex-col gap-6 mx-6 py-[120px] lg:max-w-screen-xl">
+        <h1 class="text-[32px] text-[#179800] font-[600]">Popular Products</h1>
+        <div class="flex justify-between flex-col  lg:flex-row gap-6">
+            <!--  one container -->
+            <div class="bg-green-400 p-10  rounded-[10px] flex-1">
+                <div class="flex flex-col gap-6">
+                    <h1 class="font-bold text-white text-3xl">30% off</h1>
+                    <p class="font-mono text-gray-600">"Get 30% off on all products today!"</p>
+                    <div>
+                        <button class="bg-white   text-black rounded-[8px]  hover:text-white hover:bg-black px-8 py-4 mb-14">Buy Now</button>
+                    </div>
+                </div>
+                <div class="flex justify-end   ">
+                    <img class="w-full" src="c2-assets/vegetable-offer.png" alt="">
+                </div>
 
- <!-- multiple Grid section -->
-   <!-- <section class="bg-gray-300 mb-20">
-
-    <div class="lg:max-w-screen-xl mx-auto px-16 lg:px-15">
-      <h1 class="text-green-600 text-2xl font-bold">Popular Products</h1>
-    </div>
-    <div class=" lg:max-w-screen-xl mx-auto px-16 lg:px-15 lg:mb-8  mt-20 ">
-      
-    
-    <div class=" bg-green-400 grid grid-cols-1 row-span-3   lg:max-w-screen-xl mx-auto px-16 lg:px-15">
-      <img class="relative object-left-bottom" src="c2-assets/vegetable-offer.png" alt="">
-      <h2>30% off</h2>
-      <p>Discover a world of treats, toys and essentials handpicked for</p>
-      <button>Buy Now</button>
-    </div>
-
-    </div>
-
-    <div class="grid grid-cols-2 grid-rows-4 lg:grid-cols-4 lg:grid-rows-3   lg:max-w-screen-xl mx-auto px-16 lg:px-15 lg:mb-8">
-       -->
-
-
-
-       <!-- container-1  -->
-      <!-- <div class=" flex bg-red-800">
-        <img class="" src="c2-assets/onion.png" alt="">
-        <div>
-          <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-          <h2>Onion 1 KG </h2>
-          <p>$ 39.99</p>
+            </div>
+            <!-- Large section multiple container -->
+            <div class=" grid grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="flex gap-4 items-center justify-between bg-white  rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 rounded-xl w-full h-full " src="c2-assets/potato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Tomato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white  rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 w-full h-full rounded-xl " src="c2-assets/potato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Potato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/tomato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Tomato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/potato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Potato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/tomato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Tomato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/onion.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">onion 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/potato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Tomato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/onion.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">onion 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/tomato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">Tomato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                  </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/onion.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">onion 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                  </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/potato.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">potato 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                  </div>
+                <div class="flex gap-4 items-center justify-between bg-white p-4 rounded-[10px] w-full">
+                    <div ><img class="bg-gray-100 h-full w-full rounded-xl" src="c2-assets/onion.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <p>
+                           <img src="c2-assets/star.png" alt=""> 4.8
+                        </p>
+                        <p class="text-[20px] font-[500]">onion 1KG</p>
+                        <p>$45.9</p>
+                    </div>
+                  </div>
+            </div>
         </div>
-      </div> -->
-      <!-- container-2 -->
-      <!-- <div class="bg-white">
-        <img src="c2-assets/tomato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-3 -->
-      <!-- <div class="bg-blue-700">
-        <img src="c2-assets/potato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-4 -->
-      <!-- <div class="bg-yellow-400">
-        <img src="c2-assets/tomato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-5 -->
-      <!-- <div>
-        <img src="c2-assets/potato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-6 -->
-      <!-- <div>
-        <img src="c2-assets/tomato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-7 -->
-      <!-- <div>
-        <img src="c2-assets/onion.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div> -->
-      <!-- container-8 -->
-      <!-- <div>
-        <img src="c2-assets/potato.png" alt="">
-        <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-        <h2>Onion 1 KG </h2>
-        <p>$ 39.99</p>
-      </div>
-
     </div>
-  </section> -->
+</div>
 
-  <section class="lg:flex mb-10 mt-10">
+<section>
 
-    <!--one section -->
-    <div class="bg-gradient-to-r from-green-400 to-green-50 px-6 pt-6 lg:w-2/5">
-      <h1 class="text-white text-2xl "> 30% off</h1>
-      <p>Discover a world of treats, toys and essentials handpicked for</p>
-      <button class="bg-slate-100 rounded-2xl">Buy Now</button>
-      <div class="relative h-64 bg-gray-200">
-        <img src="c2-assets/vegetable-offer.png" class="absolute bottom-0 right-0 w-48 h-48" alt="Image">
+ <!-- Arrival & Offers section -->
+ <div class="flex flex-col gap-6 mx-6  pt-[120px]  lg:mx-[140px]">
+  <h1 class="text-[32px] text-[#179800] font-[600]">Popular Products</h1>
+  <!-- for card -->
+  <div class="flex flex-col lg:flex-row items-center gap-6">
+      <!-- first container  -->
+      <div class="bg-[#115414] w-full h-full p-4 rounded-[10px] flex justify-between lg:flex-[2]">
+          <div class="flex flex-col justify-around">
+              <div>
+                  <img src="c2-assets/dawat-logo.png" alt="">
+              </div>
+              <button class="bg-[#62b76f] hover:text-black hover:bg-white text-white p-4 rounded-[10px] mt-4">Cook Exotic Dishes</button>
+              <p class="font-bold text-[22px] lg:text-[40px] text-white">UP to 20% OFF</p>
+          </div>
+          <div>
+              <img src="c2-assets/dawat-mock-up.png" alt="">
+          </div>
       </div>
+      <!--second container -->
+      <div
+          class="bg-[#102861] w-full overflow-y-hidden h-[343px] p-4 rounded-[10px] flex justify-between items-center lg:flex-1 ">
+          <div class="flex flex-col justify-around">
+              <div>
+                  <img src="c2-assets/india-gate-logo.png" alt="">
+              </div>
+              <button class="bg-[#2a4d97]  hover:text-black hover:bg-white text-white p-4 rounded-[10px] mt-4">World's No.1 Rice</button>
+              <p class="font-bold text-[22px] lg:text-[40px] text-white">UP to 40% OFF</p>
+          </div>
+          <div>
+              <img src="c2-assets/india-gate-mock-up.png" alt="">
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<!-- footer section -->
+<div
+class="bg-yellow-50 px-8 lg:mx-36 rounded-3xl
+relative top-56
+p-6 mx-6 flex flex-col lg:flex-row justify-around items-center">
+<div>
+    <img src="c2-assets/vegetable-busket.png" alt="">
+</div>
+<div class="flex flex-col gap-6 items-center lg:items-start  rounded-3xl">
+    <h1 class="font-[700px] text-[36px] text-[#179800]">Get Grocery News!</h1>
+    <p class="font-[400px] text-[20px] ">Exclusive training tips, ticks, product deals and more.</p>
+    <input class="text-white border border-red-200 bg-white p-6 rounded-[8px] w-full" type="text" placeholder="Enter your email...">
+    <div>
+        <button class=" text-white bg-[#179800] hover:text-black hover:bg-green-300 px-8 py-2 rounded-[8px]">Subscribe</button>
     </div>
+</div>
+</div>
 
-    <!-- multiple section -->
-    <div class=" flex columns-2 lg:w-3/5 lg:columns-3 ">
-
-      <!-- container-1 -->
-      <div class=" flex bg-red-800">
-        <img class="" src="c2-assets/onion.png" alt="">
-        <div>
-          <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-          <h2>Onion 1 KG </h2>
-          <p>$ 39.99</p>
-        </div>
-      </div>
-      <!-- container-2 -->
-      <div class=" flex bg-red-800">
-        <img class="" src="c2-assets/tomato.png" alt="">
-        <div>
-          <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-          <h2>Onion 1 KG </h2>
-          <p>$ 39.99</p>
-        </div>
-      </div>
-      <!-- container-3 -->
-      <div class=" flex bg-red-800">
-        <img class="" src="c2-assets/tomato.png" alt="">
-        <div>
-          <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-          <h2>Onion 1 KG </h2>
-          <p>$ 39.99</p>
-        </div>
-      </div>
-      <!-- container-4 -->
-      <div class=" flex bg-red-800">
-        <img class="" src="c2-assets/tomato.png" alt="">
-        <div>
-          <p> 4.5 <img src="c2-assets/star.png" alt=""></p>
-          <h2>Onion 1 KG </h2>
-          <p>$ 39.99</p>
-        </div>
-      </div>
-
+<div class=" bg-[#179800] text-white rounded-2xl">
+<footer
+    class="flex flex-col lg:flex-row gap-6 px-6 lg:items-end justify-between pt-[500px] lg:pt-[300px] pb-[140px] lg:mx-[140px] ">
+    <div>
+        <img src="c2-assets/logo-footer.png" alt="">
+        <p class="text-gray-300 text-wrap">Discover a world of treats, toys, and essentials handpicked for your
+            furry friends</p>
     </div>
-  </section>
+    <div class="flex flex-col gap-4">
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="flex flex-col gap-4">
+        <h1 class="text-xl">Follow Us</h1>
+        <div class="flex gap-4 text-2xl curop">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</footer>
+</div>
 
 </body>
 </html>
